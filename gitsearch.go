@@ -69,7 +69,7 @@ func makeRequestWithRateLimit(url string, tokens []string) (*http.Response, erro
 
 func main() {
 	if len(os.Args) < 3 {
-		fmt.Println("Usage: go run script.go <tokens-file-path> <query>")
+		fmt.Println("Usage: gitsearch <tokens-file-path> <query>")
 		os.Exit(1)
 	}
 	tokensFilePath := os.Args[1]
